@@ -3,7 +3,7 @@
 A responsive food/restaurant website built using **HTML, CSS, and JavaScript**.  
 The website provides an attractive food menu interface with category filtering, responsive navigation, scroll animations, and interactive menu buttons.
 
-![foodwebsite]{foodwebsite.png}
+![foodwebsite](foodwebsite.png)
 
 ## 🚀 Features
 
