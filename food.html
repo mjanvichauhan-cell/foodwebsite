@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Foodman | असली स्वाद की पहचान</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../newwebsite/food.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Food<span>man</span><small>असली स्वाद की पहचान</small></a>
+    <button class="menu-toggle" id="menuBtn"><i class="ri-menu-line"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#chef">Chef</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="btn nav-cart">Book a Table</button>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrapper">
+    <div class="hero-content reveal">
+      <span class="hero-tag">🔥 <span class="hindi">आज ही ऑर्डर करें</span> · Order Today</span>
+      <p class="hindi-line">मिलिए, खाइए और असली स्वाद का आनंद लीजिए</p>
+      <h1>Meet, Eat & Enjoy The <span>True Taste</span></h1>
+      <p>From home-style dal to sizzling tandoori platters, every dish at Foodman is cooked fresh with real Indian spices and a lot of pyaar.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn">देखें मेनू · View Menu</a>
+        <a href="#chef" class="btn btn-outline">Meet Our Chefs</a>
+      </div>
+    </div>
+    <div class="hero-image reveal">
+      <div class="hero-visual">
+        <img src="../newwebsite/explore.png" alt="Traditional Indian thali platter" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="about-section" id="about">
+  <div class="wrapper">
+    <div class="about-image reveal">
+      <img src="https://images.unsplash.com/photo-1717756896292-3201089585f6?auto=format&fit=crop&w=800&q=80" alt="Foodman kitchen team" />
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">हमारे बारे में · About Us</span>
+      <h2 class="section-title">A Kitchen Rooted In Tradition</h2>
+      <p class="section-desc">Foodman started as a small family kitchen and grew into a place where every recipe still comes from home — slow-cooked gravies, hand-ground spices, and recipes passed down for generations.</p>
+      <div class="about-stats">
+        <div>
+          <strong>12+</strong>
+          <span>Years serving</span>
+        </div>
+        <div>
+          <strong>40+</strong>
+          <span>Dishes on menu</span>
+        </div>
+        <div>
+          <strong>25k+</strong>
+          <span>Happy customers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu-section" id="menu">
+  <div class="wrapper">
+    <div class="center">
+      <span class="eyebrow">हमारा मेनू · Our Menu</span>
+      <h2 class="section-title">Our Special Dishes</h2>
+      <p class="section-desc center">Choose from starters, veg thalis and non-veg specials, all made fresh every day.</p>
+    </div>
+
+    <div class="menu-filters reveal" id="menuFilters">
+      <button class="filter-btn active" data-filter="all">All <small>सभी</small></button>
+      <button class="filter-btn" data-filter="starter">Starters <small>स्टार्टर</small></button>
+      <button class="filter-btn" data-filter="veg">Veg <small>शाकाहारी</small></button>
+      <button class="filter-btn" data-filter="nonveg">Non-Veg <small>मांसाहारी</small></button>
+      <button class="filter-btn" data-filter="dessert">Desserts <small>मिठाई</small></button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <div class="menu-card reveal" data-category="starter">
+        <img class="dish-img" src="https://images.unsplash.com/photo-1601050690294-397f3c324515?auto=format&fit=crop&w=800&q=80" alt="Crispy vegetable samosas" />
+        <div class="menu-card-top">
+          <h4>Veg Samosa</h4>
+          <span class="badge-tag veg-tag"><span class="veg-mark"></span>Veg</span>
+        </div>
+        <p>Crispy pastry filled with spiced potatoes and peas, served with tangy tamarind chutney.</p>
+        <div class="menu-card-footer">
+          <span class="price">₹120</span>
+          <button class="add-btn"><i class="ri-add-line"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="starter">
+        <img class="dish-img" src="https://images.unsplash.com/photo-1705359573325-f2006d5e459f?auto=format&fit=crop&w=800&q=80" alt="Grilled chicken seekh kebab skewers" />
+        <div class="menu-card-top">
+          <h4>Chicken Seekh Kebab</h4>
+          <span class="badge-tag nonveg-tag"><span class="nonveg-mark"></span>Non-Veg</span>
+        </div>
+        <p>Minced chicken skewers grilled over charcoal with ginger, garlic and roasted spices.</p>
+        <div class="menu-card-footer">
+          <span class="price">₹240</span>
+          <button class="add-btn"><i class="ri-add-line"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="veg">
+        <img class="dish-img" src="https://images.unsplash.com/photo-1781332146569-9c5093bc2ca5?auto=format&fit=crop&w=800&q=80" alt="Paneer butter masala curry" />
+        <div class="menu-card-top">
+          <h4>Paneer Butter Masala</h4>
+          <span class="badge-tag veg-tag"><span class="veg-mark"></span>Veg</span>
+        </div>
+        <p>Soft paneer cubes simmered in a rich, creamy tomato gravy with butter and garam masala.</p>
+        <div class="menu-card-footer">
+          <span class="price">₹280</span>
+          <button class="add-btn"><i class="ri-add-line"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="veg">
+        <img class="dish-img" src="https://images.unsplash.com/photo-1664717698774-84f62382613b?auto=format&fit=crop&w=800&q=80" alt="Vegetable biryani rice" />
+        <div class="menu-card-top">
+          <h4>Veg Biryani</h4>
+          <span class="badge-tag veg-tag"><span class="veg-mark"></span>Veg</span>
+        </div>
+        <p>Fragrant basmati rice layered with mixed vegetables, saffron and traditional biryani spices.</p>
+        <div class="menu-card-footer">
+          <span class="price">₹220</span>
+          <button class="add-btn"><i class="ri-add-line"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="nonveg">
+        <img class="dish-img" src="https://images.unsplash.com/photo-1742599361498-79824d24e355?auto=format&fit=crop&w=800&q=80" alt="Butter chicken curry with rice" />
+        <div class="menu-card-top">
+          <h4>Butter Chicken</h4>
+          <span class="badge-tag nonveg-tag"><span class="nonveg-mark"></span>Non-Veg</span>
+        </div>
+        <p>Tandoor-roasted chicken cooked in a velvety, buttery tomato sauce. A true Foodman favourite.</p>
+        <div class="menu-card-footer">
+          <span class="price">₹320</span>
+          <button class="add-btn"><i class="ri-add-line"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="nonveg">
+        <img class="dish-img" src="https://images.unsplash.com/photo-1775039983787-3fe9b416c545?auto=format&fit=crop&w=800&q=80" alt="Chicken biryani with rice" />
+        <div class="menu-card-top">
+          <h4>Chicken Biryani</h4>
+          <span class="badge-tag nonveg-tag"><span class="nonveg-mark"></span>Non-Veg</span>
+        </div>
+        <p>Slow-cooked chicken and basmati rice layered with saffron, fried onions and whole spices.</p>
+        <div class="menu-card-footer">
+          <span class="price">₹300</span>
+          <button class="add-btn"><i class="ri-add-line"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="dessert">
+        <img class="dish-img" src="https://images.unsplash.com/photo-1666190092159-3171cf0fbb12?auto=format&fit=crop&w=800&q=80" alt="Gulab jamun Indian sweets" />
+        <div class="menu-card-top">
+          <h4>Gulab Jamun</h4>
+          <span class="badge-tag veg-tag"><span class="veg-mark"></span>Veg</span>
+        </div>
+        <p>Soft milk dumplings soaked in warm rose and saffron syrup. The perfect end to any meal.</p>
+        <div class="menu-card-footer">
+          <span class="price">₹99</span>
+          <button class="add-btn"><i class="ri-add-line"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="wrapper">
+    <div class="why-card reveal">
+      <span class="why-icon"><i class="ri-bowl-fill"></i></span>
+      <h4>Order Your Food</h4>
+      <p>ऑर्डर करें आसानी से। Place your order online in just a few clicks and pick your favourite dishes.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-icon"><i class="ri-truck-fill"></i></span>
+      <h4>Fast Delivery</h4>
+      <p>गरमा-गरम खाना, समय पर। Hot food delivered fast, right to your doorstep across the city.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-icon"><i class="ri-star-smile-fill"></i></span>
+      <h4>Enjoy Your Food</h4>
+      <p>स्वाद का असली मज़ा लें। Sit back, relax, and enjoy every bite prepared with love and fresh spices.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chef-section" id="chef">
+  <div class="wrapper">
+    <div class="chef-image reveal">
+      <div class="chef-visual">
+        <img src="../newwebsite/chef.png"alt="Foodman chefs in the kitchen" />
+      </div>
+    </div>
+    <div class="chef-content reveal">
+      <span class="eyebrow" style="color:#f5a623">हमारे शेफ · Our Chefs</span>
+      <h2 class="section-title">Cooked By The Best Chefs In India</h2>
+      <p class="section-desc">Our chefs bring together years of experience, family recipes and fresh regional spices to create dishes that feel like home.</p>
+      <ul class="chef-list">
+        <li><i class="ri-checkbox-fill"></i> Authentic recipes passed down for generations</li>
+        <li><i class="ri-checkbox-fill"></i> Fresh spices ground in-house every single day</li>
+        <li><i class="ri-checkbox-fill"></i> Every dish cooked with care and full of pyaar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section" id="reviews">
+  <div class="wrapper">
+    <span class="eyebrow">ग्राहक क्या कहते हैं</span>
+    <h2 class="section-title">What Our Customers Are Saying</h2>
+    <p class="section-desc center">Real reviews from our happy customers who trust Foodman for their daily meals.</p>
+    <div class="testimonial-grid">
+      <div class="testimonial-card reveal">
+        <p>"Foodman's biryani reminds me of my dadi's cooking. Truly delicious and full of flavour every single time!"</p>
+        <div class="testimonial-person">
+          <span class="testimonial-avatar">PS</span>
+          <div>
+            <h5>Priya Sharma</h5>
+            <span>Marketing Manager, Jaipur</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <p>"I always order from Foodman for a quick, tasty meal. Fast delivery and amazing taste, every single time."</p>
+        <div class="testimonial-person">
+          <span class="testimonial-avatar">RM</span>
+          <div>
+            <h5>Rohan Mehta</h5>
+            <span>Software Engineer, Bengaluru</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <p>"Foodman is my go-to for family catering. Great service and the veg thali is simply the best in town."</p>
+        <div class="testimonial-person">
+          <span class="testimonial-avatar">AI</span>
+          <div>
+            <h5>Ananya Iyer</h5>
+            <span>Event Planner, Chennai</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="wrapper footer-grid">
+    <div>
+      <a href="#" class="footer-logo">Food<span>man</span></a>
+      <p>असली स्वाद की पहचान। Bringing authentic Indian flavours to your table, one dish at a time.</p>
+    </div>
+    <div>
+      <h4>Product</h4>
+      <div class="footer-links">
+        <a href="#">Menu</a>
+        <a href="#">Specials</a>
+        <a href="#">Meal Deals</a>
+        <a href="#">Catering</a>
+      </div>
+    </div>
+    <div>
+      <h4>Information</h4>
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Nutrition Info</a>
+        <a href="#">Allergen Info</a>
+      </div>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <div class="footer-links">
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">Copyright © 2026 Foodman. All rights reserved.</div>
+</footer>
+
+<script src="../newwebsite/food.js"></script>
+</body>
+</html>
